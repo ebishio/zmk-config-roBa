@@ -4,9 +4,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //スクロール量定義
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_ZKHK  GRAVE        // Zenkaku ↔ Hankaku ↔ Kanji (半角 ↔ 全角 ↔ 漢字)
 #define JP_MINUS MINUS        // -
 #define JP_CARET EQUAL        // ^
@@ -75,7 +77,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
     };
 
@@ -124,10 +126,10 @@
 
         SYMBOL_FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp DOLLAR     &kp LESS_THAN         &kp GREATER_THAN       &kp JP_AT                                   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&kp JP_COLON     &kp PERCENT    &kp JP_LPAR           &kp JP_RPAR            &kp SLASH   &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&kp JP_SEMI      &kp JP_AMPS    &kp JP_LBKT           &kp JP_RBKT            &kp JP_YEN  &kp JP_HASH         &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&kp LCTRL        &kp LEFT_WIN   &kp LEFT_ALT          &trans                 &kp SPACE   &kp LEFT_SHIFT      &trans      &trans                              &trans
+&kp EXCLAMATION  &kp DOLLAR    &kp LESS_THAN  &kp GREATER_THAN  &kp JP_AT                                   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&kp JP_COLON     &kp PERCENT   &kp JP_LPAR    &kp JP_RPAR       &kp SLASH   &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&kp JP_SEMI      &kp JP_AMPS   &kp JP_LBKT    &kp JP_RBKT       &kp JP_YEN  &kp JP_HASH         &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
+&kp LCTRL        &kp LEFT_WIN  &kp LEFT_ALT   &trans            &kp SPACE   &kp LEFT_SHIFT      &trans      &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
