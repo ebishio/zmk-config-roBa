@@ -124,10 +124,10 @@
 
         SYMBOL_FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp DOLLAR     &kp LESS_THAN         &kp GREATER_THAN       &kp AT_SIGN                                                  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&kp COLON        &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH             &trans              &kp DOUBLE_QUOTES  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&kp SEMI         &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp HASH            &kp SINGLE_QUOTE   &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&kp LCTRL        &kp LEFT_WIN   &kp LEFT_ALT          &trans                 &kp SPACE             &kp LEFT_SHIFT      &trans             &trans                              &trans
+&kp EXCLAMATION  &kp DOLLAR     &kp LESS_THAN         &kp GREATER_THAN       &kp JP_AT                                   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&kp JP_COLON     &kp PERCENT    &kp JP_LPAR           &kp JP_RPAR            &kp SLASH   &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&kp JP_SEMI      &kp JP_AMPS    &kp JP_LBKT           &kp JP_RBKT            &kp JP_YEN  &kp JP_HASH         &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
+&kp LCTRL        &kp LEFT_WIN   &kp LEFT_ALT          &trans                 &kp SPACE   &kp LEFT_SHIFT      &trans      &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
