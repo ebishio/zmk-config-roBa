@@ -148,10 +148,10 @@
 
         SHORTCUT {
             bindings = <
-&trans     &trans      &trans           &trans             &trans                             &trans  &trans              &kp LC(LS(A))        &kp LA(PRINTSCREEN)  &kp PRINTSCREEN
-&kp LC(T)  &kp LC(F4)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(W))  &trans      &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(TAB)          &kp LC(LS(TAB))
-&trans     &trans      &trans           &trans             &trans         &trans      &trans  &trans  &trans              &trans               &trans               &trans
-&trans     &trans      &trans           &trans             &trans         &trans      &trans  &trans                                                                &trans
+&kp PRINTSCREEN     &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &trans             &trans                             &trans  &trans    &trans    &trans    &trans
+&kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(LS(W))  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LA(LS(TAB))  &kp LA(TAB)        &trans         &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans              &trans               &trans           &trans             &trans         &trans      &trans  &trans                                &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
