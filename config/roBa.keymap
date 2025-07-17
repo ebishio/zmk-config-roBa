@@ -135,10 +135,10 @@
 
         ARROW_NUM {
             bindings = <
-&trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans                                    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans              &trans     &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp Z   &kp X           &kp C           &kp V            &trans     &trans              &kp EQUAL  &kp UNDER     &kp N1  &kp N2  &kp N3  &kp N0
-&trans  &trans          &trans          &trans           &kp SPACE  &kp LEFT_SHIFT      &trans     &trans                                &kp PERIOD
+&trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans                                       &kp JP_ASTRK  &kp N7  &kp N8  &kp N9  &kp JP_PLUS
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans              &kp JP_CARET  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp Z   &kp X           &kp C           &kp V            &trans     &trans              &kp JP_EQUAL  &kp JP_UNDER  &kp N1  &kp N2  &kp N3  &kp N0
+&trans  &trans          &trans          &trans           &kp SPACE  &kp LEFT_SHIFT      &trans        &trans                                &kp PERIOD
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
