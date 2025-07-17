@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //スクロール量定義
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 &mt {
@@ -36,26 +37,6 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
     };
 
     macros {
@@ -82,9 +63,9 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
-
     };
 
     keymap {
@@ -98,7 +79,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &kp SPACE  &kp LEFT_SHIFT       &mo 1      &mo 2                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SYMBOL_FUNCTION {
@@ -108,6 +89,8 @@
 &kp SEMI         &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH  &kp HASH            &kp SINGLE_QUOTE   &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
 &kp LCTRL        &kp LEFT_WIN   &kp LEFT_ALT          &trans                 &kp SPACE             &kp LEFT_SHIFT      &trans             &trans                              &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW_NUM {
@@ -117,6 +100,8 @@
 &kp Z   &kp X           &kp C           &kp V            &trans     &trans              &kp EQUAL  &kp UNDER     &kp N1  &kp N2  &kp N3  &kp N0
 &trans  &trans          &trans          &trans           &kp SPACE  &kp LEFT_SHIFT      &trans     &trans                                &kp PERIOD
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SHORTCUT {
@@ -127,7 +112,7 @@
 &trans     &trans      &trans           &trans             &trans         &trans      &trans  &trans                                                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
