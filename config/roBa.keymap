@@ -53,6 +53,10 @@
     quick-tap-ms = <0>;
 };
 
+&trackball_listener {
+    input-processors = <&zip_temp_layer 4 500>;
+};
+
 &trackball {
 //  automouse-layer = <4>;
     scroll-layers = <3>;
