@@ -53,7 +53,7 @@
     quick-tap-ms = <0>;
 };
 
-//AMLの設定
+//AML復帰除外キー設定
 &zip_temp_layer {
     excluded-positions = <
         18 // J
@@ -63,8 +63,14 @@
     >;
 };
 
+//トラックボール操作時AML動作定義
 &trackball_listener {
     input-processors = <&zip_temp_layer 4 500>;
+};
+
+//マウスクリック操作時AML動作定義
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 4 250>;
 };
 
 &trackball {
