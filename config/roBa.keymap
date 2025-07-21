@@ -53,12 +53,13 @@
     quick-tap-ms = <0>;
 };
 
-//AML復帰除外キー設定
+//AML誤爆防止・復帰除外キー設定
 &zip_temp_layer {
+    require-prior-idle-ms = <200>;
     excluded-positions = <
         18 // J
         19 // K
-        20 // ;
+        20 // L
         39 // Shift
     >;
 };
