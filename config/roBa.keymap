@@ -55,7 +55,7 @@
 
 //AML誤爆防止・復帰除外キー設定
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <100>;
     excluded-positions = <
         18 // J
         19 // K
