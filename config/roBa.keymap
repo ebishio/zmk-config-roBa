@@ -104,6 +104,11 @@
             bindings = <&kp LS(TAB)>;
             key-positions = <1 2>;
         };
+
+        kana {
+            bindings = <&kp GRAVE>;
+            key-positions = <34 38>;
+        };
     };
 
     macros {
