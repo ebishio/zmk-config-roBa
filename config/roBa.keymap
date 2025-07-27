@@ -106,7 +106,7 @@
         };
 
         kana {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp JP_ZKHK>;
             key-positions = <34 38>;
         };
     };
