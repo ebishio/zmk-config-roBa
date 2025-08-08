@@ -102,6 +102,11 @@
 
         kana {
             bindings = <&kp JP_ZKHK>;
+            key-positions = <34 38>;
+        };
+
+        caps_lock {
+            bindings = <&none>;
             key-positions = <10 11>;
         };
     };
