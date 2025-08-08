@@ -102,7 +102,7 @@
 
         kana {
             bindings = <&kp JP_ZKHK>;
-            key-positions = <34 38>;
+            key-positions = <10 11>;
         };
     };
 
