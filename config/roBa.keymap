@@ -101,7 +101,7 @@
         };
 
         caps_lock {
-            bindings = <&kp &kp LS(JP_EISU)>;
+            bindings = <&kp LS(JP_EISU)>;
             key-positions = <10 11>;
         };
 
