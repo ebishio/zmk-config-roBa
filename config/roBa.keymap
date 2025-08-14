@@ -104,11 +104,6 @@
             bindings = <&kp LS(JP_EISU)>;
             key-positions = <10 11>;
         };
-
-        kana {
-            bindings = <&kp JP_ZKHK>;
-            key-positions = <34 38>;
-        };
     };
 
     macros {
@@ -156,10 +151,10 @@
 
         SYMBOL_FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp DOLLAR    &kp LESS_THAN  &kp GREATER_THAN  &kp JP_AT                                   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
-&kp JP_COLON     &kp PERCENT   &kp JP_LPAR    &kp JP_RPAR       &kp SLASH   &trans              &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
-&kp JP_SEMI      &kp JP_AMPS   &kp JP_LBKT    &kp JP_RBKT       &kp JP_YEN  &kp JP_HASH         &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
-&kp LCTRL        &kp LEFT_WIN  &kp LEFT_ALT   &trans            &kp SPACE   &kp LEFT_SHIFT      &trans      &trans                              &trans
+&kp EXCLAMATION  &kp DOLLAR   &kp LESS_THAN  &kp GREATER_THAN  &kp JP_AT                                &kp F1   &kp F2   &kp F3   &kp F4   &kp F5
+&kp JP_COLON     &kp PERCENT  &kp JP_LPAR    &kp JP_RPAR       &kp SLASH   &trans           &kp JP_DQT  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&kp JP_SEMI      &kp JP_AMPS  &kp JP_LBKT    &kp JP_RBKT       &kp JP_YEN  &kp JP_HASH      &kp JP_SQT  &kp F11  &kp F12  &kp F13  &kp F14  &kp QUESTION
+&trans           &trans       &trans         &trans            &trans      &trans           &trans      &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -167,10 +162,10 @@
 
         ARROW_NUM {
             bindings = <
-&trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans                                       &kp JP_ASTRK  &kp N7  &kp N8  &kp N9  &kp JP_PLUS
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans              &kp JP_CARET  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS
-&kp Z   &kp X           &kp C           &kp V            &trans     &trans              &kp JP_EQUAL  &kp JP_UNDER  &kp N1  &kp N2  &kp N3  &kp N0
-&trans  &trans          &trans          &trans           &kp SPACE  &kp LEFT_SHIFT      &trans        &trans                                &kp PERIOD
+&trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans                            &kp JP_ASTRK  &kp N7  &kp N8  &kp N9  &kp JP_PLUS
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp JP_CARET  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS
+&trans  &kp X           &kp C           &kp V            &trans  &trans      &kp JP_EQUAL  &kp JP_UNDER  &kp N1  &kp N2  &kp N3  &kp N0
+&trans  &trans          &trans          &trans           &trans  &trans      &trans        &trans                                &kp PERIOD
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -189,11 +184,13 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         SCROLL {
