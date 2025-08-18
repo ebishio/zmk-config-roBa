@@ -50,10 +50,7 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
+&lt { hold-while-undecided; };
 
 // AML誤爆防止・復帰除外キー設定
 
