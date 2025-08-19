@@ -105,14 +105,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
-
-        visio1: visio1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_SHIFT &kp LCTRL &mkp MB2>;
-
-            label = "VISIO1";
-        };
     };
 
     behaviors {
@@ -173,8 +165,8 @@
 
         SHORTCUT {
             bindings = <
-&kp LA(TAB)         &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &kp PRINTSCREEN    &trans                      &trans  &trans    &kp LS(LC(W))  &visio1   &trans
-&kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &trans
+&kp LA(TAB)         &kp LA(PRINTSCREEN)  &kp LS(LC(A))    &kp PRINTSCREEN    &trans                      &trans  &trans    &kp LS(LC(W))  &trans    &trans
+&kp LC(T)           &kp LC(F4)           &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3       &mkp MB2  &kp LS(LCTRL)
 &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LC(LS(TAB))  &kp LC(TAB)        &trans  &trans      &trans  &trans  &trans    &trans         &trans    &trans
 &trans              &trans               &trans           &trans             &trans  &trans      &trans  &trans                                     &trans
             >;
