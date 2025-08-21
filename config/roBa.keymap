@@ -50,7 +50,10 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
-&lt { hold-while-undecided; };
+&lt {
+    hold-while-undecided;
+    flavor = "hold-preferred";
+};
 
 // AML誤爆防止・復帰除外キー設定
 
