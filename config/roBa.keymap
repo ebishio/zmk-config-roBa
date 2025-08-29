@@ -69,7 +69,18 @@
 
 // トラックボール操作時AML動作定義
 
-&trackball_listener { input-processors = <&zip_temp_layer 4 500>; };
+&trackball_listener {
+    input-processors = <&zip_temp_layer 4 500>;
+
+    scroller {
+        layers = <2>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_scaler 1 4>,
+            <&zip_xy_to_scroll_mapper>;
+        // process-next;
+    };
+};
 
 // マウスクリック操作時AML動作定義
 
