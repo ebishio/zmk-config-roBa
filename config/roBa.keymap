@@ -57,25 +57,25 @@
 
 // AML誤爆防止・復帰除外キー設定
 
-&zip_temp_layer {
-    require-prior-idle-ms = <100>;
-    excluded-positions = <
-        18 // J
-        19 // K
-        20 // L
-        39 // Shift
-    >;
-};
+// &zip_temp_layer {
+//    require-prior-idle-ms = <100>;
+//    excluded-positions = <
+//        18 // J
+//        19 // K
+//        20 // L
+//        39 // Shift
+//    >;
+// };
 
 // トラックボール操作時AML動作定義
 
-&trackball_listener { input-processors = <&zip_temp_layer 4 500>; };
+// &trackball_listener { input-processors = <&zip_temp_layer 4 500>; };
 
 // マウスクリック操作時AML動作定義
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
+// &mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
 
-//&trackball {
+// &trackball {
 //    scroll-layers = <2>;
 //    automouse-layer = <4>;
 //    arrows {
@@ -89,7 +89,7 @@
 //        wait-ms = <5>;
 //        tap-ms = <5>;
 //    };
-//};
+// };
 
 / {
     combos {
