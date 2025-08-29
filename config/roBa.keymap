@@ -75,21 +75,21 @@
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
 
-// &trackball {
-//      automouse-layer = <4>;
-//      scroll-layers = <3>;
-//      arrows {
-//         layers = <3>;
-//         bindings =
-//             <&kp RIGHT_ARROW>,
-//             <&kp LEFT_ARROW>,
-//             <&kp UP_ARROW>,
-//             <&kp DOWN_ARROW>;
-//         tick = <10>;
-//         wait-ms = <5>;
-//         tap-ms = <5>;
-//     };
-// };
+&trackball {
+    scroll-layers = <2>;
+//    automouse-layer = <4>;
+//    arrows {
+//        layers = <3>;
+//        bindings =
+//            <&kp RIGHT_ARROW>,
+//            <&kp LEFT_ARROW>,
+//            <&kp UP_ARROW>,
+//            <&kp DOWN_ARROW>;
+//        tick = <10>;
+//        wait-ms = <5>;
+//        tap-ms = <5>;
+//    };
+};
 
 / {
     combos {
