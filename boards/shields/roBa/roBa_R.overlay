@@ -15,6 +15,16 @@
             ;
 };
 
+&zip_temp_layer {
+   require-prior-idle-ms = <100>;
+   excluded-positions = <
+       18 // J
+       19 // K
+       20 // L
+       33 // Shift
+   >;
+};
+
 / {
     trackball_listener {
         status = "okay";
