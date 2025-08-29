@@ -75,18 +75,6 @@
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
 
-// スクロールレイヤー定義
-
-scroller {
-    layers = <2>;  //有効化するレイヤーの指定
-    input-processors = 
-        // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,     //X軸とY軸の入れ替え
-        <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
-        <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
-        <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
-        <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
-};
-
 //&trackball {
 //    scroll-layers = <2>;
 //    automouse-layer = <4>;
