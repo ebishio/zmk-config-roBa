@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// スクロール量定義
+// ロータリーエンコーダ スクロール量定義
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
@@ -50,27 +50,6 @@
 #define JP_QMARK LS(JP_SLASH) // ?
 #define JP_UNDER LS(JP_BSLH)  // _
 
-&lt {
-    hold-while-undecided;
-    flavor = "hold-preferred";
-};
-
-// AML誤爆防止・復帰除外キー設定
-
-// &zip_temp_layer {
-//    require-prior-idle-ms = <100>;
-//    excluded-positions = <
-//        18 // J
-//        19 // K
-//        20 // L
-//        39 // Shift
-//    >;
-// };
-
-// トラックボール操作時AML動作定義
-
-// &trackball_listener { input-processors = <&zip_temp_layer 4 500>; };
-
 // マウスクリック操作時AML動作定義
 
 &mkp_input_listener {
@@ -92,6 +71,11 @@
 //        tap-ms = <5>;
 //    };
 // };
+
+&lt {
+    hold-while-undecided;
+    flavor = "hold-preferred";
+};
 
 / {
     combos {
