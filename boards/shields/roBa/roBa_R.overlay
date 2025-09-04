@@ -37,9 +37,7 @@
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_xy_scaler 1 24>,
-                <&zip_conditional &kp UP_ARROW
-                    (&zip_code_mapper (INPUT_MOVE_X INPUT_CODE_NONE))
-                >,
+                <&zip_code_mapper (INPUT_MOVE_X INPUT_CODE_NONE)>,
                 <&zip_xy_to_scroll_mapper>;
             process-next;
         };
