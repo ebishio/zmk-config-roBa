@@ -70,13 +70,12 @@
 //    };
 // };
 
-flavor = "
+&lt {
+    hold-while-undecided;
+    flavor = "hold-preferred";
+};
 
-hold-preferred {
-    ";};
-
-/
-
+/ {
     combos {
         compatible = "zmk,combos";
 
