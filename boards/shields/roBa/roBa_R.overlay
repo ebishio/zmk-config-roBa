@@ -33,10 +33,11 @@
         device = <&trackball>;
         input-processors = <&zip_temp_layer 4 500>; // オートマウスレイヤー
         scroller2 {
-            layers = <2>; // オートスクロールレイヤー
+            layers = <2>; // オートスクロールレイヤー（縦スクロールのみ）
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-                <&zip_xy_scaler 1 24>,
+                <&zip_x_scaler 0 24>,
+                <&zip_y_scaler 1 24>,
                 <&zip_xy_to_scroll_mapper>;
             process-next;
         };
