@@ -70,10 +70,7 @@
 //    };
 // };
 
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <100>;
-};
+&lt { tapping-term-ms = <100>; };
 
 / {
     combos {
