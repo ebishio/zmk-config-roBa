@@ -70,6 +70,11 @@
 //    };
 // };
 
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <100>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
