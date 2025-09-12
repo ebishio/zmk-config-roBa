@@ -32,7 +32,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_temp_layer 4 500>; // オートマウスレイヤー
-        scroller {
+        scroller2 {
             layers = <2>; // オートスクロールレイヤー
             input-processors =
                 <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
