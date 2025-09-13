@@ -72,6 +72,7 @@
 
 &lt {
     hold-while-undecided;
+    flavor = "balanced";
 };
 
 / {
