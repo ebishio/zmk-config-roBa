@@ -70,10 +70,7 @@
 //    };
 // };
 
-&lt {
-    hold-while-undecided;
-    flavor = "balanced";
-};
+&lt { flavor = "hold-preferred"; };
 
 &mt { flavor = "tap-preferred"; };
 
