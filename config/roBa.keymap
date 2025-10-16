@@ -85,6 +85,11 @@
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
+
+        caps_lock {
+            bindings = <&kp A>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
