@@ -75,7 +75,10 @@
     hold-while-undecided;
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <150>;
+};
 
 / {
     combos {
@@ -84,11 +87,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-        };
-
-        caps_lock {
-            bindings = <&kp LS(JP_EISU)>;
-            key-positions = <10 11>;
         };
     };
 
@@ -126,10 +124,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R          &kp T                                &kp Y          &kp U  &kp I      &mt MINUS O  &mt JP_TILDE P
-&kp A      &kp S         &kp D         &kp F          &kp G        &kp ESCAPE  &kp INS     &kp H          &kp J  &kp K      &kp L        &kp ENTER
-&kp Z      &kp X         &kp C         &kp V          &kp B        &trans      &trans      &kp N          &kp M  &kp COMMA  &kp DOT      &kp LEFT_SHIFT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 JP_ZKHK  &lt 1 SPACE  &mo 2       &kp DELETE  &kp BACKSPACE                                 &kp LS(JP_EISU)
+&kp Q      &kp W         &kp E         &kp R          &kp T                                    &kp Y          &kp U  &kp I      &mt MINUS O  &mt JP_TILDE P
+&kp A      &kp S         &kp D         &kp F          &kp G        &kp ESCAPE      &kp INS     &kp H          &kp J  &kp K      &kp L        &kp ENTER
+&kp Z      &kp X         &kp C         &kp V          &kp B        &trans          &trans      &kp N          &kp M  &kp COMMA  &kp DOT      &kp LEFT_SHIFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 JP_ZKHK  &lt 1 SPACE  &mo 2           &kp DELETE  &kp BACKSPACE                                 &kp LS(JP_EISU)
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
